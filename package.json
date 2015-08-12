@@ -4,11 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "browserify js/index.js -o app.js",
+    "start": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dygraphs": "^1.1.1"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "http-server": "^0.8.0"
   }
 }
